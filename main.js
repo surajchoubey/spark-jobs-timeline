@@ -14,13 +14,19 @@ const myjob = async () => {
     jobs.reverse();
   
     for (var job of jobs) {
+
+      var date1 = job.submissionTime.slice(0,23) + 'Z';
+      var date2 = job.completionTime.slice(0,23) + 'Z';
+
       results.push({
         id: i++,
         content: job.name,
-        start: Date(job.submissionTime), 
-        end: Date(job.completionTime)
+        start: date1, 
+        end: date2
       });
     };
+
+    console.log(results);
   
     var items = new vis.DataSet(results);
 
