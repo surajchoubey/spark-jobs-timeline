@@ -1,0 +1,14 @@
+# spark-jobs-timeline
+UI created for spark jobs timeline using vis-timeline
+
+## install node_modules
+
+```
+cd SERVER
+npm install
+# change application id in index.js to your application id and then start server
+node index.js
+```
+
+index.html is the client side application
+
