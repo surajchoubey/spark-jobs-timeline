@@ -6,7 +6,7 @@ UI created for spark jobs timeline using vis-timeline
 ```
 cd SERVER
 npm install
-# change application id to your job id and then start server
+# change application id in index.js to your job id and then start server
 node index.js
 ```
 
